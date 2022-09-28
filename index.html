@@ -1,11 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Development</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"><script defer src="runtime.js"></script><script defer src="main.js"></script>
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <title>Battleship</title>
+<script defer src="runtime.js"></script><script defer src="main.js"></script></head>
 <body>
+  <div class="block">
+    <div class="select">
+      <p>Welcome to battleship game</p>
+      <p>Place  your <span id="ship">Carrier</span></p>
+      <div class="axis"> <button id="rotation" data-axis="yAxis">Rotate</button></div>
+      <div class="select-board"></div>
+    </div>
+  </div>
+  <div class="winner">
+    <div>
+      <p id="message">You Won</p>
+      <button id="restart">Play Again</button>
+    </div>
+  </div>
+  <div class="main">
+    <div class="title"><h1>BATTLESHIP</h1></div>
+    <div class="inner">
+      <div class="inner-left">
+        <div class="left-name">Player 1</div>
+        <div class="left-board">
+          <div class="board"></div>
+        </div>
+        <div class="left-score"></div>
+      </div>
+      <div class="inner-right">
+        <div class="right-name">Player 2</div>
+        <div class="right-board">
+          <div class="board"></div>
+        </div>
+        <div class="right-score"></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p class="footer-cont"> 2022 @ <i class="fa-brands fa-github"></i> aalbino221
+    </p>
+</div>
 </body>
 </html>
