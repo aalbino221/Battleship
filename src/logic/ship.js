@@ -1,5 +1,7 @@
-const ship = (len = 0) => (
-  {
+const ship = (length = 0) => {
+  let len = length;
+  if (len <= 2) len += 1;
+  return {
     length: len,
     hitList: [],
     isSunk: false,
@@ -10,6 +12,7 @@ const ship = (len = 0) => (
     sunk() {
       if (this.hitList.length === this.length) this.isSunk = true;
     },
-  });
+  };
+};
 
 export { ship };
